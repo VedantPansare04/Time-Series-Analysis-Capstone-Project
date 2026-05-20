@@ -1,0 +1,6 @@
+Stock,Sector,Dataset_Path,Model_Used,Stationary,Best_RMSE
+TCS,IT,C:\Users\Vedant\Desktop\Implementing statistical divergences in python\tsa_capstone\data\raw\TCS.csv,ARIMA,False,338.7024
+HDFCBANK,Banking,C:\Users\Vedant\Desktop\Implementing statistical divergences in python\tsa_capstone\data\raw\HDFCBANK.csv,ARIMA,False,19.5034
+RELIANCE,Energy,C:\Users\Vedant\Desktop\Implementing statistical divergences in python\tsa_capstone\data\raw\RELIANCE.csv,ARIMA,False,82.1285
+SUNPHARMA,Pharma,C:\Users\Vedant\Desktop\Implementing statistical divergences in python\tsa_capstone\data\raw\SUNPHARMA.csv,ARIMA,False,68.8852
+MARUTI,Auto,C:\Users\Vedant\Desktop\Implementing statistical divergences in python\tsa_capstone\data\raw\MARUTI.csv,Holt-Winters,False,2769.9366
