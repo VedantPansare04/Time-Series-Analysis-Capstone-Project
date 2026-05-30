@@ -54,8 +54,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Define paths
-# app.py is inside 'dashboard/' but data/outputs/report are at the repo root
-base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# app.py and directories (data, outputs, report) are in the same folder
+base_dir = os.path.dirname(os.path.abspath(__file__))
 data_raw_dir = os.path.join(base_dir, 'data', 'raw')
 data_proc_dir = os.path.join(base_dir, 'data', 'processed')
 data_ret_dir = os.path.join(base_dir, 'data', 'returns')
@@ -348,7 +348,7 @@ elif page == "Volatility & Risk Profiles":
             fig_ret = px.line(
                 ret_df, 
                 x=ret_df.index, 
-                y='Log_Return', 
+                y='Log_Returns', 
                 title=f"{selected_stock} Daily Log Returns",
                 color_discrete_sequence=["#1976D2"]
             )
