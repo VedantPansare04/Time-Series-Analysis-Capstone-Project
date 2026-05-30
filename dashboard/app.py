@@ -54,7 +54,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Define paths
-base_dir = os.path.dirname(os.path.abspath(__file__))
+# app.py is inside 'dashboard/' but data/outputs/report are at the repo root
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data_raw_dir = os.path.join(base_dir, 'data', 'raw')
 data_proc_dir = os.path.join(base_dir, 'data', 'processed')
 data_ret_dir = os.path.join(base_dir, 'data', 'returns')
